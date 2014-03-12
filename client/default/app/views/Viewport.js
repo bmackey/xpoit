@@ -13,6 +13,8 @@ app.views.Viewport = Ext.extend(Ext.Panel, {
     // Put instances of cards into app.views namespace
     Ext.apply(app.views, {
       home:     new app.views.Home(),
+      student:  new app.views.Student(),
+      project:  new app.views.Project(),
       map:      new app.views.MapView(),
       twitter:  new app.views.Twitter(),        
       payment:  new app.views.Payment(),
@@ -24,6 +26,8 @@ app.views.Viewport = Ext.extend(Ext.Panel, {
     Ext.apply(this, {
       items: [
         app.views.home,
+        app.views.student,
+        app.views.project,
         app.views.payment,
         app.views.stocks,
         app.views.twitter,

@@ -1,0 +1,162 @@
+info it worked if it ends with ok
+info using fhc@0.11.1-330
+info using node@v0.10.11
+silly config file /Users/bmackey/.fhcrc
+silly config file /usr/local/etc/fhcrc
+verbose feedhenry url https://psdev.feedhenry.com/
+silly POST box/srv/1.1/app/envvariable/list
+silly url, unparsed https://psdev.feedhenry.com/
+verbose resolveUrl - IN box/srv/1.1/app/envvariable/list
+verbose resolveUrl - OUT https://psdev.feedhenry.com/box/srv/1.1/app/envvariable/list
+verbose calling url https://psdev.feedhenry.com/box/srv/1.1/app/envvariable/list payload: { appId: 'VZRgi221ckUDj-HZbbFcuE0X', env: 'dev' }
+silly port 443
+silly cookie feedhenry=fSplNU_RLySqJ789XWCAEZsu;
+silly nocache false
+silly explain level 0
+verbose getHeaders { accept: 'application/json',
+verbose getHeaders   cookie: 'feedhenry=fSplNU_RLySqJ789XWCAEZsu;',
+verbose getHeaders   'User-Agent': 'FHC/0.11.1-330 darwin/13.1.0',
+verbose getHeaders   'content-type': 'application/json',
+verbose getHeaders   'content-length': 48 }
+verbose what... { appId: 'VZRgi221ckUDj-HZbbFcuE0X', env: 'dev' }
+silly writing json { appId: 'VZRgi221ckUDj-HZbbFcuE0X', env: 'dev' }
+silly headers { accept: 'application/json',
+silly headers   cookie: 'feedhenry=fSplNU_RLySqJ789XWCAEZsu;',
+silly headers   'User-Agent': 'FHC/0.11.1-330 darwin/13.1.0',
+silly headers   'content-type': 'application/json',
+silly headers   'content-length': 48 }
+silly getProxy null
+silly response headers { date: 'Wed, 12 Mar 2014 14:17:50 GMT',
+silly response headers   expires: 'Sat, 6 May 1995 12:00:00 GMT',
+silly response headers   'cache-control': 'no-store, no-cache, must-revalidate',
+silly response headers   p3p: 'CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL" policyref="/box/p3p.xml"',
+silly response headers   pragma: 'no-cache',
+silly response headers   'last-modified': 'Wed, 12 Mar 2014 14:17:50 GMT',
+silly response headers   etag: '"Z1xEugn74r9i3POtdGUQUF"',
+silly response headers   'content-type': 'application/json;charset=UTF-8',
+silly response headers   'content-length': '35',
+silly response headers   vary: 'Accept-Encoding',
+silly response headers   connection: 'close' }
+silly packages Packages list: ["default"]
+verbose App client file requested: client/default/index.html
+silly Resolved file: client/default/index.html, exists
+silly mimetype for client/default/index.html is text/html
+silly App index.html inserted into container
+silly Container file requested: 
+silly Resolved file: .fhclocal/87-style.css, exists
+silly mimetype for .fhclocal/87-style.css is text/css
+silly Container file requested: 
+silly Resolved file: .fhclocal/87-scripts.js, exists
+silly mimetype for .fhclocal/87-scripts.js is application/javascript
+silly Container file requested: 
+silly Resolved file: .fhclocal/frameworks.js, exists
+silly mimetype for .fhclocal/frameworks.js is application/javascript
+verbose App client file requested: client/default/lib/touch/sencha-touch.js
+silly Resolved file: client/default/lib/touch/sencha-touch.js, exists
+silly mimetype for client/default/lib/touch/sencha-touch.js is application/javascript
+verbose App client file requested: client/default/lib/feedhenry/fhact.js
+silly Resolved file: client/default/lib/feedhenry/fhact.js, exists
+silly mimetype for client/default/lib/feedhenry/fhact.js is application/javascript
+verbose App client file requested: client/default/lib/touch/resources/css/sencha-touch.css
+silly Resolved file: client/default/lib/touch/resources/css/sencha-touch.css, exists
+silly mimetype for client/default/lib/touch/resources/css/sencha-touch.css is text/css
+verbose App client file requested: client/default/app/css/base.css
+silly Resolved file: client/default/app/css/base.css, exists
+silly mimetype for client/default/app/css/base.css is text/css
+verbose App client file requested: client/default/app/css/home.css
+silly Resolved file: client/default/app/css/home.css, exists
+silly mimetype for client/default/app/css/home.css is text/css
+verbose App client file requested: client/default/app/app.js
+silly Resolved file: client/default/app/app.js, exists
+silly mimetype for client/default/app/app.js is application/javascript
+verbose App client file requested: client/default/app/models/Twitter.js
+silly Resolved file: client/default/app/models/Twitter.js, exists
+silly mimetype for client/default/app/models/Twitter.js is application/javascript
+verbose App client file requested: client/default/app/models/Stocks.js
+silly Resolved file: client/default/app/models/Stocks.js, exists
+silly mimetype for client/default/app/models/Stocks.js is application/javascript
+verbose App client file requested: client/default/app/views/Viewport.js
+silly Resolved file: client/default/app/views/Viewport.js, exists
+silly mimetype for client/default/app/views/Viewport.js is application/javascript
+verbose App client file requested: client/default/app/views/Home.js
+silly Resolved file: client/default/app/views/Home.js, exists
+silly mimetype for client/default/app/views/Home.js is application/javascript
+verbose App client file requested: client/default/app/views/Student.js
+silly Resolved file: client/default/app/views/Student.js, exists
+silly mimetype for client/default/app/views/Student.js is application/javascript
+verbose App client file requested: client/default/app/views/Project.js
+silly Resolved file: client/default/app/views/Project.js, exists
+silly mimetype for client/default/app/views/Project.js is application/javascript
+verbose App client file requested: client/default/app/views/Camera.js
+silly Resolved file: client/default/app/views/Camera.js, exists
+silly mimetype for client/default/app/views/Camera.js is application/javascript
+verbose App client file requested: client/default/app/views/Map.js
+silly Resolved file: client/default/app/views/Map.js, exists
+silly mimetype for client/default/app/views/Map.js is application/javascript
+verbose App client file requested: client/default/app/views/Payment.js
+silly Resolved file: client/default/app/views/Payment.js, exists
+silly mimetype for client/default/app/views/Payment.js is application/javascript
+verbose App client file requested: client/default/app/views/Stocks.js
+silly Resolved file: client/default/app/views/Stocks.js, exists
+silly mimetype for client/default/app/views/Stocks.js is application/javascript
+verbose App client file requested: client/default/app/views/Settings.js
+silly Resolved file: client/default/app/views/Settings.js, exists
+silly mimetype for client/default/app/views/Settings.js is application/javascript
+verbose App client file requested: client/default/app/views/Twitter.js
+silly Resolved file: client/default/app/views/Twitter.js, exists
+silly mimetype for client/default/app/views/Twitter.js is application/javascript
+verbose App client file requested: client/default/app/controllers/Camera.js
+silly Resolved file: client/default/app/controllers/Camera.js, exists
+silly mimetype for client/default/app/controllers/Camera.js is application/javascript
+verbose App client file requested: client/default/app/controllers/Map.js
+silly Resolved file: client/default/app/controllers/Map.js, exists
+silly mimetype for client/default/app/controllers/Map.js is application/javascript
+verbose App client file requested: client/default/app/controllers/Payment.js
+silly Resolved file: client/default/app/controllers/Payment.js, exists
+silly mimetype for client/default/app/controllers/Payment.js is application/javascript
+verbose App client file requested: client/default/app/controllers/Stocks.js
+silly Resolved file: client/default/app/controllers/Stocks.js, exists
+silly mimetype for client/default/app/controllers/Stocks.js is application/javascript
+verbose App client file requested: client/default/app/controllers/Settings.js
+silly Resolved file: client/default/app/controllers/Settings.js, exists
+silly mimetype for client/default/app/controllers/Settings.js is application/javascript
+silly Received app init mesasge.
+silly Resolved file: .fhclocal/initResponse.json, exists
+silly mimetype for .fhclocal/initResponse.json is application/json
+silly Using http://127.0.0.1:8001 as cloud host
+verbose App client file requested: client/default/app/images/homeLogo.png
+silly Resolved file: client/default/app/images/homeLogo.png, exists
+silly mimetype for client/default/app/images/homeLogo.png is image/png
+verbose App client file requested: client/default/app/images/triangle.png
+silly Resolved file: client/default/app/images/triangle.png, exists
+silly mimetype for client/default/app/images/triangle.png is image/png
+verbose App client file requested: client/default/app/images/icons/search.png
+silly Resolved file: client/default/app/images/icons/search.png, exists
+silly mimetype for client/default/app/images/icons/search.png is image/png
+verbose App client file requested: client/default/app/images/icons/student.png
+silly Resolved file: client/default/app/images/icons/student.png, exists
+silly mimetype for client/default/app/images/icons/student.png is image/png
+verbose App client file requested: client/default/app/images/icons/project.png
+silly Resolved file: client/default/app/images/icons/project.png, exists
+silly mimetype for client/default/app/images/icons/project.png is image/png
+verbose App client file requested: client/default/app/images/icons/map.png
+silly Resolved file: client/default/app/images/icons/map.png, exists
+silly mimetype for client/default/app/images/icons/map.png is image/png
+verbose App client file requested: client/default/app/images/icons/visit.png
+silly Resolved file: client/default/app/images/icons/visit.png, exists
+silly mimetype for client/default/app/images/icons/visit.png is image/png
+verbose App client file requested: client/default/app/images/icons/note.png
+silly Resolved file: client/default/app/images/icons/note.png, exists
+silly mimetype for client/default/app/images/icons/note.png is image/png
+verbose App client file requested: client/default/app/images/icons/info.png
+silly Resolved file: client/default/app/images/icons/info.png, exists
+silly mimetype for client/default/app/images/icons/info.png is image/png
+verbose npm: exited with code 34
+ERR! Error: npm ERR! not ok code 0
+ERR!     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/fh-fhc/lib/local.js:229:13)
+ERR!     at ChildProcess.EventEmitter.emit (events.js:98:17)
+ERR!     at Process.ChildProcess._handle.onexit (child_process.js:789:12)
+ERR! 
+ERR! System Darwin 13.1.0
+ERR! command "node" "/usr/local/bin/fhc" "local" "VZRgi221ckUDj-HZbbFcuE0X"
+verbose exit [ 1, true ]

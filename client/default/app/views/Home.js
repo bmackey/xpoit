@@ -1,70 +1,38 @@
 app.views.Home = Ext.extend(Ext.Panel, {
   title: 'Home',
   iconCls: 'home',
-
-  dockedItems: [
-  	{
-  		dock: 'top',
-  		xtype: 'toolbar',
-  		title: '<img class="logo" src="app/images/logo.png" />',
-  	}
-  ],
+  style: 'background-color:#6d6e71;',
 
   items: [
     {
   		xtype: 'panel',
-  		height: 20
+  		height: 150,
+  		style: 'background-color:#FFF; -webkit-box-shadow: rgba(0,0,0,0.4) 2px 4px 1px 2px; overflow: visible; text-align: center',
+  		html: '<img class="homeLogo" src="app/images/homeLogo.png" /><br/>'
   	},
-
-  	/* Twitter & Google Maps Buttons */
-  	new Ext.Panel({
-  		height: 100,
-
-  		layout: {
-	      type: 'hbox',
-	      pack: 'center',  
-	    },
-	    items: [
-	    	{
-		  		xtype: 'spacer'
-		  	},
-		  	{
-		  		xtype: 'button',
-		  		cls: 'mapIcon',
-          id: 'mapBtn',
-		  		width:  100,
-		  		height: 100,
-		  		handler: function() {
-		  			app.views.viewport.setActiveItem(app.views.map, {type: 'slide', direction: 'left'});
-		  		}
-		  	},
-		  	{
-		  		xtype: 'spacer'
-		  	},
-		  	{
-		  		xtype: 'button',
-		  		cls: 'twitterIcon',
-          id: 'twitterBtn',
-		  		width:  100,
-		  		height: 100,
-		  		handler: function() {
-		  			app.views.viewport.setActiveItem(app.views.twitter, {type: 'slide', direction: 'left'});
-		  		}
-		  	},
-		  	{
-		  		xtype: 'spacer'
-		  	}
-	    ]
-  	}),
 
   	{
   		xtype: 'panel',
-  		height: 20
+  		height:20,
+  		style: 'text-align:center',
+  		html: '<img src="app/images/triangle.png" />'
   	},
 
-  	/* Camera and Payment Buttons */
+
   	new Ext.Panel({
-  		height: 100,
+  		height: 50,
+
+  		layout: {
+	      type: 'hbox',
+	      pack: 'center',  
+	    },
+	    items: [
+	    ]
+	}),
+
+  	//search
+	new Ext.Panel({
+  		height: 50,
 
   		layout: {
 	      type: 'hbox',
@@ -72,48 +40,34 @@ app.views.Home = Ext.extend(Ext.Panel, {
 	    },
 	    items: [
 	    	{
-		  		xtype: 'spacer'
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/search.png" />'
 		  	},
 		  	{
-		  		xtype: 'button',
-		  		cls:  'paymentIcon',
-          id: 'paymentBtn',
-		  		width:  100,
-		  		height: 100,
-		  		handler: function() {
-		  			app.views.viewport.setActiveItem(app.views.payment, {type: 'slide', direction: 'left'});
-		  		}
+          		id: 'studentBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>Search</a><br /><hr />',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.student, {type: 'slide', direction: 'left'});
+      					}, c);
+    				}
+    			}
 		  	},
 		  	{
-		  		xtype: 'spacer'
-		  	},
-		  	{
-		  		xtype: 'button',
-		  		cls: 'cameraIcon',
-          id: 'cameraBtn',
-		  		width:  100,
-		  		height: 100,
-		  		handler: function() {
-		  		  Ext.dispatch({
-			        controller: app.controllers.camera,
-			        action: 'openCamera'
-			      });
-		  		}
-		  	},
-		  	{
-		  		xtype: 'spacer'
+		  		flex:1
 		  	}
-	    ]
-  	}),
+		  	
+		]
+	}),
 
-  	{
-  		xtype: 'panel',
-  		height: 20
-  	},
-
-  	/* Stocks & Settings Buttons  */
+  	// Student Link
   	new Ext.Panel({
-  		height: 100,
+  		height: 50,
 
   		layout: {
 	      type: 'hbox',
@@ -121,35 +75,200 @@ app.views.Home = Ext.extend(Ext.Panel, {
 	    },
 	    items: [
 	    	{
-		  		xtype: 'spacer'
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/student.png" />'
 		  	},
 		  	{
-		  		xtype: 'button',
-		  		cls: 'webviewIcon',
-          id: 'webviewBtn',
-		  		width:  100,
-		  		height: 100,
-		  		handler: function() {
-		  			app.views.viewport.setActiveItem(app.views.stocks, {type: 'slide', direction: 'left'});
-		  		}
+          		id: 'studentBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>Student List</a><br /><hr />',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.student, {type: 'slide', direction: 'left'});
+      					}, c);
+    				}
+    			}
 		  	},
 		  	{
-		  		xtype: 'spacer'
-		  	},		  	
-		  	{
-		  		xtype: 'button',
-		  		cls: 'settingsIcon',
-          id: 'settingsBtn',
-		  		width:  100,
-		  		height: 100,
-		  		handler: function() {
-		  			app.views.viewport.setActiveItem(app.views.settings, {type: 'slide', direction: 'left'});
-		  		}
-		  	},
-		  	{
-		  		xtype: 'spacer'
+		  		flex:1
 		  	}
-	    ]
-  	}),
+		  	
+		]
+	}),
+  	//Project Link
+  	new Ext.Panel({
+  		height: 50,
+
+  		layout: {
+	      type: 'hbox',
+	      pack: 'center',  
+	    },
+	    items: [
+	    	{
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/project.png" />'
+		  	},
+		  	{
+          		id: 'projectBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>Project List</a><br /><hr />',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.project, {type: 'slide', direction: 'left'});
+		  				}, c);
+    				}
+    			}
+		  	},
+		  	{
+		  		flex: 1
+		  	}
+		]
+	}),
+
+  	//Maps Link
+  	new Ext.Panel({
+  		height: 50,
+
+  		layout: {
+	      type: 'hbox',
+	      pack: 'center',  
+	    },
+	    items: [
+	    	{
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/map.png" />'
+		  	},
+		  	{
+          		id: 'projectBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>Location Maps</a><br /><hr />',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.project, {type: 'slide', direction: 'left'});
+		  				}, c);
+    				}
+    			}
+		  	},
+		  	{
+		  		flex: 1
+		  	}
+		]
+	}),
+
+  	//Visit It Link
+  	new Ext.Panel({
+  		height: 50,
+
+  		layout: {
+	      type: 'hbox',
+	      pack: 'center',  
+	    },
+	    items: [
+	    	{
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/visit.png" />'
+		  	},
+		  	{
+          		id: 'projectBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>VisitIt!</a><br /><hr />',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.project, {type: 'slide', direction: 'left'});
+		  				}, c);
+    				}
+    			}
+		  	},
+		  	{
+		  		flex: 1
+		  	}
+		]
+	}),
+
+
+  	//NoteIt Link
+  	new Ext.Panel({
+  		height: 50,
+
+  		layout: {
+	      type: 'hbox',
+	      pack: 'center',  
+	    },
+	    items: [
+	    	{
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/note.png" />'
+		  	},
+		  	{
+          		id: 'projectBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>NoteIt! Microblog</a><br /><hr />',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.project, {type: 'slide', direction: 'left'});
+		  				}, c);
+    				}
+    			}
+		  	},
+		  	{
+		  		flex: 1
+		  	}
+		]
+	}),
+
+
+  	//Info Link
+  	new Ext.Panel({
+  		height: 50,
+
+  		layout: {
+	      type: 'hbox',
+	      pack: 'center',  
+	    },
+	    items: [
+	    	{
+		  		flex: 1.5,
+		  		html:'<img class="icons" src="app/images/icons/info.png" />'
+		  	},
+		  	{
+          		id: 'projectBtn',
+          		cls: 'homeIcons',
+		  		height: 10,
+		  		width: 200,
+		  		html: '<a>Information</a>',
+
+		  		listeners: {
+		  			render: function(c){
+      					c.getEl().on('click', function(){
+        					app.views.viewport.setActiveItem(app.views.project, {type: 'slide', direction: 'left'});
+		  				}, c);
+    				}
+    			}
+		  	},
+		  	{
+		  		flex: 1
+		  	}
+		]
+	}),
   ]
 });

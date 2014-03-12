@@ -84,3 +84,37 @@ padding-left: 15px !important;
 ul{
 	padding-top: 15px !important;
 }
+
+
+
+
+
+
+
+
+
+/*custom css*/
+.homeLogo {
+	width: 50%; 
+	padding-top: 40px;
+}
+
+.homeIcons {
+	color:#fff;
+}
+
+.icons {
+	width: 35px;
+	float: right;
+	margin-right: 20px;
+	margin-top: -10px;
+}
+
+hr { 
+	display: block; 
+	height: 1px;
+    border: 0; 
+    border-top: 1px solid #828383;
+    margin: 1em 0; 
+    padding: 0; 
+}
