@@ -52,12 +52,16 @@ app.views.Information = Ext.extend(Ext.Panel, {
         },
         
         {
-          html: '<img class="menuIcon" src="app/images/icons/menu.png"/>',
-          //     hidden: app.hideBack || false,
-          // handler: function() {
-          //   app.views.viewport.setActiveItem(app.views.home, {type: 'slide', direction: 'right'});
-          //       app.stores.stocks.removeAll();
-          // }
+
+          html: '<a><img class="menuIcon" src="app/images/icons/menu.png"/></a>',
+
+          listeners: {
+            render: function(c){
+                c.getEl().on('click', function(){
+                  app.views.viewport.setActiveItem(app.views.menu, {type: 'slide', direction: 'up'});
+                }, c);
+            }
+          }
         },
       ]
     },
