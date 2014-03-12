@@ -13,7 +13,6 @@ html {
 body {
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-weight: lighter;
-
 }
 
 .x-toolbar-dark {
@@ -22,6 +21,8 @@ body {
 	background-image: none;
 	background-image: none;
 	border-color: #fff;
+	-webkit-box-shadow: rgba(0,0,0,0.4) 2px 2px 1px 2px; 
+	overflow: visible;
 }
 
 .x-toolbar-dark .x-button {
@@ -34,6 +35,11 @@ body {
 	color: transparent;
 	text-shadow: none;
 	-webkit-box-shadow: none;
+}
+
+.x-button img {
+	width: 30%;
+	height: 30%;
 }
 
 .x-toolbar-title {
@@ -53,4 +59,23 @@ body {
 
 .x-toolbar-dark .x-toolbar-title {
 	color: #6d6e71;
+}
+
+.headerLogo {
+	width: 50px !important;
+}
+
+.btm-nav {
+	background-color: #599195;
+}
+
+.circle {
+	width:15%;
+	margin-top: -25px;
+}
+
+.menuIcon {
+	width: 12%;
+	margin-bottom: 40px;
+	margin-top: -40px;
 }
