@@ -15,3 +15,42 @@ body {
 	font-weight: lighter;
 
 }
+
+.x-toolbar-dark {
+	background-color: #fff;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	border-color: #fff;
+}
+
+.x-toolbar-dark .x-button {
+	background-color: transparent;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	border: none;
+	border-top-color: transparent;
+	color: transparent;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.x-toolbar-title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	line-height: 2.1em;
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: lighter;
+	font-variant:small-caps;
+	color: #6d6e71;
+}
+
+.x-toolbar-dark .x-toolbar-title {
+	color: #6d6e71;
+}

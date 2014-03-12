@@ -104,10 +104,14 @@ ul{
 }
 
 .icons {
-	width: 35px;
+	width: 30px;
 	float: right;
 	margin-right: 20px;
 	margin-top: -10px;
+}
+
+.triangle {
+	width:15%;
 }
 
 hr { 
@@ -115,6 +119,13 @@ hr {
 	height: 1px;
     border: 0; 
     border-top: 1px solid #828383;
-    margin: 1em 0; 
+    margin: .5em 0; 
     padding: 0; 
+}
+
+.headerLogo {
+	float: right;
+	margin-top: 10px;
+	width: 20%;
+	padding-right: 10px;
 }

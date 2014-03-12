@@ -26,12 +26,12 @@ silly headers   'User-Agent': 'FHC/0.11.1-330 darwin/13.1.0',
 silly headers   'content-type': 'application/json',
 silly headers   'content-length': 48 }
 silly getProxy null
-silly response headers { date: 'Wed, 12 Mar 2014 14:17:50 GMT',
+silly response headers { date: 'Wed, 12 Mar 2014 15:11:26 GMT',
 silly response headers   expires: 'Sat, 6 May 1995 12:00:00 GMT',
 silly response headers   'cache-control': 'no-store, no-cache, must-revalidate',
 silly response headers   p3p: 'CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL" policyref="/box/p3p.xml"',
 silly response headers   pragma: 'no-cache',
-silly response headers   'last-modified': 'Wed, 12 Mar 2014 14:17:50 GMT',
+silly response headers   'last-modified': 'Wed, 12 Mar 2014 15:11:27 GMT',
 silly response headers   etag: '"Z1xEugn74r9i3POtdGUQUF"',
 silly response headers   'content-type': 'application/json;charset=UTF-8',
 silly response headers   'content-length': '35',
@@ -87,6 +87,9 @@ silly mimetype for client/default/app/views/Student.js is application/javascript
 verbose App client file requested: client/default/app/views/Project.js
 silly Resolved file: client/default/app/views/Project.js, exists
 silly mimetype for client/default/app/views/Project.js is application/javascript
+verbose App client file requested: client/default/app/views/Information.js
+silly Resolved file: client/default/app/views/Information.js, exists
+silly mimetype for client/default/app/views/Information.js is application/javascript
 verbose App client file requested: client/default/app/views/Camera.js
 silly Resolved file: client/default/app/views/Camera.js, exists
 silly mimetype for client/default/app/views/Camera.js is application/javascript
@@ -151,8 +154,11 @@ silly mimetype for client/default/app/images/icons/note.png is image/png
 verbose App client file requested: client/default/app/images/icons/info.png
 silly Resolved file: client/default/app/images/icons/info.png, exists
 silly mimetype for client/default/app/images/icons/info.png is image/png
+verbose App client file requested: client/default/app/images/back.png
+silly Resolved file: client/default/app/images/back.png, exists
+silly mimetype for client/default/app/images/back.png is image/png
 verbose npm: exited with code 34
-ERR! Error: npm ERR! not ok code 0
+ERR! Error:  not ok code 0
 ERR!     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/fh-fhc/lib/local.js:229:13)
 ERR!     at ChildProcess.EventEmitter.emit (events.js:98:17)
 ERR!     at Process.ChildProcess._handle.onexit (child_process.js:789:12)
