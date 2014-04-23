@@ -11,10 +11,14 @@
 */
 
 Ext.application({
-    name: 'FHSencha',
+    name: 'Xpoit',
 
     requires: [
         'Ext.MessageBox'
+    ],
+
+    controllers: [
+        'Main'
     ],
 
     views: [
@@ -44,7 +48,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('FHSencha.view.Main'));
+        Ext.Viewport.add(Ext.create('Xpoit.view.Main'));
     },
 
     onUpdated: function() {

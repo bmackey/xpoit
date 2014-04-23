@@ -7,5 +7,5 @@ echo 'Deleting contents of default...'
 rm -rf default/*
 cd default
 echo 'Copying testing build into client/default...'
-cp -R ../development/build/testing/FHSencha/* .
+cp -R ../development/build/testing/Xpoit/* .
 echo 'Done...'

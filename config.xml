@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="com.feedhenry.donal.mcgee.firstsenchaapp" version="" width="320" height="480" start="index.html">
-<title>firstSenchaApp</title>
+<widget id="com.feedhenry.brid.mackey.project" version="" width="320" height="480" start="index.html">
+<title>Xpoit!</title>
 <description></description>
-<author name="" email="donal.mcgee@feedhenry.com" url=""></author>
+<author name="" email="brid.mackey@gmail.com" url=""></author>
 <license></license>
 </widget>
