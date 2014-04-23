@@ -15,16 +15,18 @@ var user = "bmackey",
 	upString = (typeof user === 'string' && typeof password === 'string') ? user + ":" + password : "",
 	database = "xpoit",
 	host = "ds039487.mongolab.com:39487";
+
+
 /* 'getConfig' server side REST API method.
  * Trivial example of pulling in a shared config file.
  */
-exports.getConfig = function(params, callback) {
-	console.log("In getConfig() call");
-	var cfg = require("config.js");
-	return callback(null, {
-		config: cfg.config
-	});
-};
+// exports.getConfig = function(params, callback) {
+// 	console.log("In getConfig() call");
+// 	var cfg = require("config.js");
+// 	return callback(null, {
+// 		config: cfg.config
+// 	});
+// };
 
 exports.findAll = function(params, cb) {
 
